@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+   <meta charset="UTF-8" />
+   <title> Rock Paper Scissors </title>
+   <link rel="stylesheet" type="text/css" href="pages.css" title="style" />
+   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+   <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+   <script src="pages.js"></script> 
+   <script src="page2.js"></script>
+   <script src="server new.js"></script>
+</head>
+
+<body>
+   <div class="grid-container">
+
+      <div class="item1"><h3><span id="minutes"></span></h3>:<h3><span id="seconds"></span></h3>
+        
+    <table>
+        <tr>
+    <th id="playname">Player</th>
+    
+    <th>Computer</th>
+        </tr>
+        <tr>
+            <!--the score will have to be changed in js after evey round using the id-->
+            <th id="pcount">0</th>
+            <th id="ccount">0</th>
+                </tr>
+    </table></div>
+      <div>
+          <!--display player and computer chices and will also have to be changes in js-->
+      <img id="playerselection"src="images/circle.png">
+      
+      <img id="computerselection"src="images/circle.png">
+      
+      </div>
+      <br><br><br><br><br>
+      <div>
+           <!--replace with rock paper and scissors images-->
+      <img src="images/rock.png" onclick="rpc('rock')">
+	  <img src="images/paper.png" onclick="rpc('paper')">
+      <img src="images/scissors.png" onclick="rpc('scissors')">
+      </div><br><br><br><br><br>
+      
+      <button onclick="play()">Go</button><br><br>
+	  <!-- <a href="page3.html" ><button>End game</button></a> -->
+      <button onclick ="endgame2()" >End game</button>
+       
+      </div>
+</body>
+
+</html>
